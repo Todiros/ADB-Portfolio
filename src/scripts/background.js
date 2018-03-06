@@ -11,7 +11,7 @@ function Point(x = random(width), y = random(height), a = random(PI)){
   this.a = a;
   this.dx = cos(a);
   this.dy = sin(a);
-  this.color = color(97,137,47,1);
+  this.color = color(87,137,47,0.8);
 }
 
 Point.prototype.update = function(){
@@ -27,8 +27,8 @@ function setup(){
   createCanvas();
   colorMode(RGB);
   windowResized();
-  blendMode(ADD);
-  strokeWeight(1.2);
+  //blendMode(ADD);
+  strokeWeight(1);
 }
 
 function init(){
