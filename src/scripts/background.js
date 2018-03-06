@@ -11,7 +11,7 @@ function Point(x = random(width), y = random(height), a = random(PI)){
   this.a = a;
   this.dx = cos(a);
   this.dy = sin(a);
-  this.color = color(97,137,47,3);
+  this.color = color(97,137,47,1);
 }
 
 Point.prototype.update = function(){
