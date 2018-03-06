@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:500|Saira+Condensed:500');
 
+/* ------------ */
+/* --- CORE --- */
 html, body {
+	display: grid;
+	grid-template-rows: 90px 1fr;
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
 	padding: 0;
-	background: #373839;
+	background: rgb(37,38,39);
 	color: white;
 	font-family: 'Roboto', sans-serif;
 }
@@ -15,20 +19,24 @@ html, body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	z-index: 1;
 }
 
+
+/* ------------ */
+/* --- MENU --- */
 #top-menu {
 	position: fixed;
 	width: 100%;
 	height: 90px;
 	display: grid;
 	grid-template-columns: 25% 50% 25%;
-	grid-auto-rows: auto;
+	grid-row: 1;
 	background: #181818;
 	box-shadow: 1px 0 4px 0 rgba(18,18,18,0.75);
 	-webkit-box-shadow: 1px 0 4px 0 rgba(18,18,18,0.75);
 	-moz-box-shadow: 1px 0 4px 0 rgba(18,18,18,0.75);
-	z-index: 1;
+	z-index: 3;
 }
 #top-menu #logo {
 	padding: 5px;
@@ -38,9 +46,12 @@ html, body {
 	padding: 0;
 	list-style-type: none;
 	text-align: left;
+	margin-top: 30px;
+	
 } 
 #navigation	li {
 	display: inline;
+	margin-left: 40px;
 }
 
 #button-wrap {
@@ -49,9 +60,31 @@ html, body {
 
 #social-wrap {
 	display: none;
+	margin-top: 35px;
+	text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+#social {
+	position: relative;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+
+/* --------------- */
+/* --- CONTENT --- */
+#content-wrap {
+	width: 100%;
+	display: grid;
+	grid-row: 2;
+	z-index: 2;
+	text-align: center;
+}
+
+
+/* MEDIA LOGO & DROPDOWN */
+@media screen and (max-width: 500px) {
 	#top-menu {
 		grid-template-columns: 80% 20%;
 	}
@@ -63,12 +96,14 @@ html, body {
 	#button-wrap {
 		display: block;
 		text-align: center;
+		margin-top: 20px;
 	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 650px) {
+/* MEDIA MENU ONLY */
+@media screen and (min-width: 501px) and (max-width: 680px) {
 	#top-menu {
-		grid-template-columns: 40% 45% 15%;
+		grid-template-columns: 30% 60% 10%;
 	}
 
 	#navigation {
@@ -77,9 +112,10 @@ html, body {
 }
 
 
-@media screen and (min-width: 651px) and (max-width: 960px) {
+/* MEDIA MENU & SOCIAL */
+@media screen and (min-width: 681px) and (max-width: 960px) {
 	#top-menu {
-		grid-template-columns: 30% 40% 10% 20%;
+		grid-template-columns: 28% 44% 8% 20%;
 	}
 	
 	#navigation {
@@ -87,23 +123,17 @@ html, body {
 	} 
 
 	#social-wrap {
-		display: block;
+		display: inherit;
 		grid-column: 4;
-		text-align: center;
-	}
-	
-	#social {
-		padding: 0;
-		list-style-type: none;
-		bottom: 10px;
 	}
 	
 	#social li {
 		display: inline;
-		padding: 5px;
+		margin: 0 10px;
 	}
 }
 
+/* MEDIA DESKTOP SIDE MENU*/
 @media screen and (min-width: 961px) {
 	#top-menu {
 		width: 90px;
@@ -123,9 +153,10 @@ html, body {
 	} 
 	#navigation	li {
 		display: block;
-		padding-bottom: 20px; 
+		padding-bottom: 40px; 
 		text-transform: uppercase;
 		font-size: 14px;
+		margin: 0;
 	}
 	
 	#social-wrap {
@@ -134,18 +165,22 @@ html, body {
 	}
 	
 	#social {
-		padding: 0;
-		list-style-type: none;
 		position: absolute;
 		bottom: 10px;
-		margin: 0 0 0 35px;
+		margin-left: 36px;
 	}
 	
 	#social li {
-		padding: 5px;
+		padding: 0;
+		margin-bottom: 15px;
+	}
+
+	#social .linkedin {
+		margin-left: 1px;
 	}
 }
 
+/* MEDIA DESKTOP HIDE SOCIAL */ 
 @media screen and (max-height: 550px) and (min-width: 961px) {
 	#social-wrap {
 		display: none;
