@@ -57,7 +57,6 @@ html, body {
 	list-style-type: none;
 	text-align: left;
 	margin-top: 30px;
-	
 } 
 #navigation	li {
 	display: inline;
@@ -96,23 +95,23 @@ html, body {
 	font-family: 'Saira Condensed', sans-serif;
 }
 
+/* - HOME PAGE - */
 #home {
 	max-height: 100%;
 }
 #home-wrap {
 	height: 100%;
 	display: grid;
-	grid-template-columns: 45% 5% 45%;
 	grid-auto-rows: auto;
-	text-align: left;
-	padding: 0 40px 0 140px;
-	margin-left: 5%;
+}
+#intro {
+	text-align: center;
+}
+#home-image-wrap {
+	display: none;
+	transform: translateY(10%);
 }
 
-#intro {
-	grid-column: 1;
-	transform: translateY(20%);
-}
 #greeting {
 	font-size: 60px;
 }
@@ -129,13 +128,21 @@ html, body {
 	color: rgb(97,137,47);
 }
 
-#home-image-wrap {
-	grid-column: 3;
-	text-align: center;
-	transform: translateY(4%);
+#contact-button {
+	width: 130px; 
+	height: 40px;
+	margin-top: 50px;
+	background: transparent;
+	color: rgb(97,137,47);
+	border: 1px solid rgb(97,137,47);
+	border-radius: 3px;
 }
-#home-image {
-	transform: translateY(4%);
+#contact-button:hover {
+	background: rgb(97,137,47);
+	color: #181818;
+}
+#contact-button:focus {
+	outline: none;
 }
 
 
@@ -163,6 +170,11 @@ html, body {
 		text-align: center;
 		margin-top: 20px;
 	}
+
+	#home-wrap {
+		grid-template-columns: 100%;
+		margin: 5% 2% 15% 2%;
+	}
 }
 
 /* MEDIA MENU ONLY */
@@ -174,6 +186,12 @@ html, body {
 	#navigation {
 		text-align: center;
 	} 
+
+	#home-wrap {
+		grid-template-columns: 100%;
+		margin: 5% 2% 15% 2%;
+	}
+	
 }
 
 
@@ -195,6 +213,19 @@ html, body {
 	#social li {
 		display: inline;
 		margin: 0 10px;
+	}
+
+	#home-wrap {
+		grid-template-columns: 50% 50%;
+		padding: 0;
+		margin: 2% 2% 15% 2%;
+	}
+	#home-image-wrap {
+		display: block;
+	}
+	#intro {
+		text-align: left;
+		margin-top: 20%;
 	}
 }
 
@@ -257,11 +288,32 @@ html, body {
 	#content-wrap {
 		margin-top: 120px;
 	}
+
+	#intro {
+		grid-column: 1;
+		transform: translateY(20%);
+		text-align: left;
+	}
+
+	#home-wrap {
+		grid-template-columns: 45% 5% 45%;
+		padding: 0 40px 0 140px;
+		margin-left: 5%;
+	}
+	#home-image-wrap {
+		display: block;
+		grid-column: 3;
+		text-align: center;
+		transform: translateY(5%);
+	}
+	#home-image {
+		margin-top: 10px;
+	}
 }
 
 /* MEDIA DESKTOP HIDE SOCIAL */ 
 @media screen and (max-height: 600px) and (min-width: 961px) {
-	#social-wrap {
+	#social-wrap, #contact-button {
 		display: none;
 	}
 }
