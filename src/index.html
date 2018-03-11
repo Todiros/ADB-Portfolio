@@ -10,16 +10,22 @@
 </head>
 <body>
     <nav id="top-menu">
-        <img src="http://www.cloudworksmedia.com/wp-content/uploads/2014/11/images-for-dummyy.png" alt="dummy-image" id="logo" height="80px">
+        <div id="logo-wrap">
+            <img src="res/img/ADB.svg" alt="adb-logo" id="logo-small" height="60px">
+            <img src="res/img/ADBStudios.svg" alt="adb-studio-logo" id="logo-full" height="60px">
+        </div>
+        
         <ul id="navigation">
-            <li class="nav-el"><a href="#" class="home"><img src="res/img/home.svg" alt="home-page-icon" width="30px"></a></li>
-            <li class="nav-el"><a href="#" class="about"><img src="res/img/about.svg" alt="about-page-icon" width="30px"></a></li>
-            <li class="nav-el"><a href="#" class="portfolio"><img src="res/img/portfolio.svg" alt="portfolio-page-icon" width="30px"></a></li>
-            <li class="nav-el"><a href="#" class="contact"><img src="res/img/contact.svg" alt="contact-page-icon" width="30px"></a></li>
+            <li class="nav-el first"><a href="#home" id="home"><img src="res/img/home.svg" alt="home-page-icon" width="30px"></a></li>
+            <li class="nav-el"><a href="#about" id="about"><img src="res/img/about.svg" alt="about-page-icon" width="30px"></a></li>
+            <li class="nav-el"><a href="#portfolio" id="portfolio"><img src="res/img/portfolio.svg" alt="portfolio-page-icon" width="30px"></a></li>
+            <li class="nav-el"><a href="#contact" id="contact"><img src="res/img/contact.svg" alt="contact-page-icon" width="30px"></a></li>
         </ul>
+
         <div id="button-wrap">
             <img src="res/img/down.svg" alt="mobile-menu-button" id="menu-button" width="50px">
         </div>
+
         <div id="social-wrap">
             <ul id="social">
                 <li class="linkedin"><a href="https://www.linkedin.com/" target="_blank" class="social-linkedin"><img src="res/img/linkedin.svg" alt="social-linked-icon" width="14px"></a></li>
@@ -28,14 +34,22 @@
             </ul>
         </div>
     </nav>
-    
+
+    <img src="res/img/ADBStudios.svg" alt="adb-studio-logo-desktop" id="logo-full-desktop" height="120px"> 
+
     <div id="content-wrap"> 
-        <p>CONTENT</p>
+        <!-- AJAX LOAD -->
     </div>
 
     <div id="controls"></div>
     <div id="overlay"></div>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
     <script src="https://github.com/processing/p5.js/releases/download/0.6.0/p5.min.js"></script>
     <script src="scripts/background.js"></script>
+    <script src="scripts/contentLoader.js"></script>
 </body>
 </html>
