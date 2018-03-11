@@ -1,31 +1,34 @@
 # TODO
 
 * [x] Created Breakpoints
-    * [ ] Separate CSS files
-* [ ] Add & Customize Fonts
-* [ ] Add Menu & Social Icons
-* [ ] Replace the placeholder with a logo
-* [ ] Create HOME Page
-    * [ ] Load async w/ AJAX
-    * [ ] Add welcome message
-    * [ ] _Logo_
+    * ~~[ ] Separate CSS files~~
+* [x] Add & Customize Fonts
+* [x] Add Menu & Social Icons
+    * [ ] **Color icon on hover**
+* [x] Replace the placeholder with a logo
+* [x] Create HOME Page
+    * [x] Load async w/ AJAX
+    * [x] Add welcome message
+    * [ ] ~~_Background Logo_~~
 * [ ] Create ABOUT Page
-    * [ ] Load async w/ AJAX
+    * [x] Load async w/ AJAX
+	* [ ] **Responsiveness**
+		* [ ] TODO
     * [ ] Add a short descriptions
     * [ ] Add a skill bars
     * [ ] _Add a interest section_
 * [ ] Create PORTFOLIO Page
-    * [ ] Load async w/ AJAX
-    * [ ] Add list of projects
+	* [x] Load async w/ AJAX
+	* [ ] Add list of projects
 * [ ] Create CONTACT Page
-    * [ ] Load async w/ AJAX
+	* [x] Load async w/ AJAX
     * [ ] Create contact form
     * [ ] _Add location map w/ Google API_
-* [ ] Social Media
-    * [ ] GitHub
-    * [ ] LinkedIn
-    * [ ] Codepen
-    * [ ] _Facebook_
-    * [ ] _Instagram_
-    * [ ] _CodeWars_
-    * [ ] _RSS_
+* [x] Social Media
+    * [x] GitHub
+    * [x] LinkedIn
+    * [x] Codepen
+    * [ ] ~~_Facebook_~~
+    * [ ] ~~_Instagram_~~
+    * [ ] ~~_CodeWars_~~
+    * [ ] ~~_RSS_~~
