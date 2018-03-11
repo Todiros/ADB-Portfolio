@@ -1,9 +1,9 @@
 let points = [];
-let tickSpeed = 5;
+let tickSpeed = 10;
 let base = 180;
 let numPoints = 5;
-let maxTicks = 1000;
-let ticks = 0;
+let maxTicks = 300;
+let ticks = 2;
 
 function Point(x = random(width), y = random(height), a = random(PI)){
   this.x = x;
