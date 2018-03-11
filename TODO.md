@@ -4,7 +4,7 @@
     * ~~[ ] Separate CSS files~~
 * [x] Add & Customize Fonts
 * [x] Add Menu & Social Icons
-    * [ ] **Color icon on hover**
+    * [x] **Icon color change on hover**
 * [x] Replace the placeholder with a logo
 * [x] Create HOME Page
     * [x] Load async w/ AJAX
