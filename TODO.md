@@ -22,7 +22,11 @@
 	* [ ] Add list of projects
 * [ ] Create CONTACT Page
 	* [x] Load async w/ AJAX
-    * [ ] Create contact form
+    * [x] Create contact form
+    * [ ] **Responsiveness**
+		* [x] Mobile
+        * [ ] Tablet
+        * [ ] Desktop
     * [ ] _Add location map w/ Google API_
 * [x] Social Media
     * [x] GitHub
