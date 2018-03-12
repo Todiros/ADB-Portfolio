@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $("#content-wrap").load("content.html #home");
+    // TODO: Switch to Home in prod
+    $("#content-wrap").load("content.html #contact");
 
     $("#navigation").on("click", "li", function() {
         let page = $( this ).children().attr('href');
