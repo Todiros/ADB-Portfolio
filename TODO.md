@@ -22,22 +22,29 @@
         * [ ] Phablet
         * [ ] Tablet
         * [ ] Desktop
+    * [ ] Set the default page to Home 
     * [ ] Add a short descriptions
     * [ ] Add a skill bars
     * [ ] _Add a interest section_
 * [ ] Create PORTFOLIO Page
 	* [x] Load async w/ AJAX
+    * [ ] **Responsiveness**
+		* [ ] Mobile
+        * [ ] Phablet
+        * [ ] Tablet
+        * [ ] Desktop
+    * [ ] Set the default page to Home 
 	* [ ] Add list of projects
 * [ ] Create CONTACT Page
 	* [x] Load async w/ AJAX
     * [x] Create contact form
-    * [ ] **Responsiveness**
+    * [x] **Responsiveness**
 		* [x] Mobile
         * [x] Phablet
-        * [ ] Tablet
-        * [ ] Desktop
-    * [ ] Set the default page to Home 
-    * [ ] _Add location map w/ Google API_
+        * [x] Tablet
+        * [x] Desktop
+    * [x] Set the default page to Home 
+    * [ ] ~~_Add location map w/ Google API_~~
 * [x] Social Media
     * [x] GitHub
     * [x] LinkedIn
