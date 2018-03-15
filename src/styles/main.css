@@ -135,23 +135,6 @@ html, body {
 	color: rgb(97,137,47);
 }
 
-#contact-button {
-	width: 130px; 
-	height: 40px;
-	margin-top: 50px;
-	background: transparent;
-	color: rgb(97,137,47);
-	border: 1px solid rgb(97,137,47);
-	border-radius: 3px;
-}
-#contact-button:hover {
-	background: rgb(97,137,47);
-	color: #181818;
-}
-#contact-button:focus {
-	outline: none;
-}
-
 /* - CONTACT PAGE - */
 #contact-page {
 	max-width: 100%;
@@ -192,23 +175,32 @@ html, body {
 #submit-wrap {
 	text-align: right;
 }
-#submit-button {
-	width: 60px; 
-	height: 30px;
-	margin-top: 10px;
+
+/* BUTTONS */ 
+#contact-button, #submit-button, #download-button {
 	background: transparent;
 	color: rgb(97,137,47);
 	border: 1px solid rgb(97,137,47);
 	border-radius: 3px;
 }
-#submit-button:hover {
+#contact-button:hover, #submit-button:hover, #download-button:hover {
 	background: rgb(97,137,47);
 	color: #181818;
 }
-#submit-button:focus {
+#contact-button:focus, #submit-button:focus, #download-button:focus {
 	outline: none;
 }
 
+#contact-button, #download-button {
+	width: 130px; 
+	height: 40px;
+	margin-top: 50px;
+}
+#submit-button {
+	width: 60px; 
+	height: 30px;
+	margin-top: 10px;
+}
 
 /* MEDIA - MOBILE - LOGO & DROPDOWN */
 @media screen and (max-width: 500px) {
@@ -248,7 +240,7 @@ html, body {
 
 	.input-field {
 		width: 100%;
-	}
+	} 
 }
 
 /* MEDIA - PHABLET - MENU ONLY */
