@@ -5,12 +5,12 @@
 * [x] Add & Customize Fonts
 * [x] Add Menu & Social Icons
     * [x] Icon color change on hover
-* [ ] **Dropdown Navbar for Mobile**
+* [x] **Dropdown Navbar for Mobile**
 * [ ] **Cross-Browser Support**
     * [x] Browser Prefixes
     * [ ] Re-done Browser Prefixes
-    * [ ] Somehow works on IE
-    * [ ] Somehow works on Edge
+    * [ ] Make it somehow work on IE
+    * [ ] Make it somehow work on Edge
 * [x] Replace the placeholder with a logo
 * [x] Create HOME Page
     * [x] Load async w/ AJAX
@@ -59,4 +59,9 @@
     * [ ] ~~_Instagram_~~
     * [ ] ~~_CodeWars_~~
     * [ ] ~~_RSS_~~
+* [ ] Known Issues
+    * [ ] **Partial content hidden due to inablity to scroll in portrait mode**
+    * [ ] **Inablity to scroll in landscape mode**
+    * [ ] Forms and buttons are NOT functional
+    * [ ] Layout breaks in IE, Edge and partially in Firefox
 
