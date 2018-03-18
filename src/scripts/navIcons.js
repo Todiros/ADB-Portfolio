@@ -1,4 +1,4 @@
-$("#navigation").on('mouseover', 'li', function() {
+$("#navigation, #dropdown-nav").on('mouseover', 'li', function() {
     let page = $( this ).children().attr("id");
     let newPath = "res/img/" + page + "-green.svg";
     $( this ).children().children().attr("src", newPath);
@@ -15,14 +15,8 @@ $("#button-wrap").on("mouseover", function() {
     let currentClass = $( this ).children().attr("class");
     $( this ).children().attr("src", `res/img/${currentClass}.svg`);
 }).on("click", function(){
-    let currentClass = $( this ).children().attr("class");
-    if (currentClass === "down") {
-        $( this ).children().attr("class", "up");
-        $( this ).children().attr("src", "res/img/up-green.svg");
-    } else {
-        $( this ).children().attr("class", "down");
-        $( this ).children().attr("src", "res/img/down-green.svg");
-    }
+    let state = $( this ).children().attr("class");
+    dropMenu(state);
 });
 
 $("#social").on('mouseover', 'li', function() {
