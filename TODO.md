@@ -32,15 +32,15 @@
     * [x] Add a short descriptions
     * [ ] ~~Add a skill bars~~
     * [ ] ~~Add a interest section~~
-* [ ] Create PORTFOLIO Page
+* [x] Create PORTFOLIO Page
 	* [x] Load async w/ AJAX
-    * [ ] **Responsiveness**
-		* [ ] Mobile
-        * [ ] Phablet
-        * [ ] Tablet
-        * [ ] Desktop
-    * [ ] Set the default page to Home 
-	* [ ] Add list of projects
+    * [x] **Responsiveness**
+		* [x] Mobile
+        * [x] Phablet
+        * [x] Tablet
+        * [x] Desktop
+    * [x] Set the default page to Home 
+	* [x] Add list of projects
 * [x] Create CONTACT Page
 	* [x] Load async w/ AJAX
     * [x] Create contact form
