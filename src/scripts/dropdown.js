@@ -15,13 +15,13 @@ function changeIconStyle(state, notHover = false) {
 
     if (state === "down") {
         $( element ).children().attr("class", "up");
-        $( element ).children().attr("src", "res/img/up-green.svg");
+        $( element ).children().attr("src", "res/img/icons/up-green.svg");
     } if (state === "up" && !notHover) {
         $( element ).children().attr("class", "down");
-        $( element ).children().attr("src", "res/img/down-green.svg");
+        $( element ).children().attr("src", "res/img/icons/down-green.svg");
     } if (state === "up" && notHover) {
         $( element ).children().attr("class", "down");
-        $( element ).children().attr("src", "res/img/down.svg");
+        $( element ).children().attr("src", "res/img/icons/down.svg");
     }
 }
 
