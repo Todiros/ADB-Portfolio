@@ -8,14 +8,14 @@
 * [x] **Dropdown Navbar for Mobile**
 * [ ] **Cross-Browser Support**
     * [x] Browser Prefixes
-    * [ ] Re-done Browser Prefixes
+    * [x] Re-done Browser Prefixes
     * [ ] Make it somehow work on IE
     * [ ] Make it somehow work on Edge
 * [x] Replace the placeholder with a logo
 * [x] Create HOME Page
     * [x] Load async w/ AJAX
     * [x] **Responsiveness**
-		* [x] Mobile
+	* [x] Mobile
         * [x] Phablet
         * [x] Tablet
         * [x] Desktop
@@ -35,7 +35,7 @@
 * [x] Create PORTFOLIO Page
 	* [x] Load async w/ AJAX
     * [x] **Responsiveness**
-		* [x] Mobile
+	* [x] Mobile
         * [x] Phablet
         * [x] Tablet
         * [x] Desktop
@@ -45,7 +45,7 @@
 	* [x] Load async w/ AJAX
     * [x] Create contact form
     * [x] **Responsiveness**
-		* [x] Mobile
+	* [x] Mobile
         * [x] Phablet
         * [x] Tablet
         * [x] Desktop
@@ -63,5 +63,6 @@
     * [ ] **Partial content hidden due to inablity to scroll in portrait mode**
     * [ ] **Inablity to scroll in landscape mode**
     * [ ] Forms and buttons are NOT functional
+    * [ ] Dropdown navbar on mobile doesn't work on desktop unless the page is reloaded
     * [ ] Layout breaks in IE, Edge and partially in Firefox
 
